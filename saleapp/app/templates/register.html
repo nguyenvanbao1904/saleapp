@@ -1,0 +1,32 @@
+{% extends 'layout/base.html' %}
+
+{% block content %}
+    <form action="/register" method="post">
+  <div class="mb-3 mt-3">
+    <label for="userName" class="form-label">User Name:</label>
+    <input type="text" class="form-control" id="userName" placeholder="Enter user name" name="username">
+  </div>
+
+  <div class="mb-3">
+    <label for="password" class="form-label">Password:</label>
+    <input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
+  </div>
+
+   <div class="mb-3">
+    <label for="confirm_password" class="form-label">Confirm Password:</label>
+    <input type="password" class="form-control" id="confirm_password" placeholder="Enter password" name="confirm_password">
+  </div>
+
+   <div class="mb-3">
+    <label for="name" class="form-label">Name:</label>
+    <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
+  </div>
+
+   <div class="mb-3">
+    <label for="avatar" class="form-label">Avatar:</label>
+    <input type="file" class="form-control" id="avatar" placeholder="Enter password" name="avatar">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}
